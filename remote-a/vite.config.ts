@@ -15,6 +15,7 @@ export default defineConfig({
       exposes: {
         "./App": "./src/App.vue", //target component you want to serve as remote side.
         "./pages/Home": "./src/pages/Home.vue", //target component you want to serve as remote side.
+        "./pages/Contact": "./src/pages/Contact.vue", //target component you want to serve as remote side.
       },
       shared: ["vue"], //we don't want to build our remote with a library the host side already have. So here we sinalize "hey, use this host side package"
     }),
